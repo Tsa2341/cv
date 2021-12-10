@@ -1,0 +1,115 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #FEDB25;
+}
+.container{
+    width: 595px;
+    height: max-content;
+    background: #FFFFFF;
+    border-top: 4px solid #101214;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header{
+    position: fixed;
+    width: 499px;
+    padding: 48px 48px 0px 48px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #FFFFFF;
+    z-index: 10;
+}
+.header > div {
+    width: 359px;
+}
+.header > div > div{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.header > div :last-child{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+.content{
+    position: relative;
+    width: 499px;
+    padding: 32px 48px 48px 48px;
+    display: flex;
+    flex-flow: row nowrap;
+    top: 100px;
+    background-color: #FFFFFF;
+}
+.row1{
+    width: 359px;
+    background-color: #FFFFFF;
+}
+.row2{
+    width: 140px;
+    background-color: #FFFFFF;
+}
+.normal-u{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #73808D;
+}
+.normal-bold-f{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    color: #101214;
+}
+.normal-f{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 18px;
+    color: #101214;
+}
+.date-f{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 18px;
+    color: #73808D;
+} 
+.br-line{
+    margin-bottom: 20px;
+}
+.row2 div{
+    color: #73808D !important;
+}
+
+@media screen and (max-width: 595px) {
+    .container{
+        width: 100vw;
+        /* padding: 8vw; */
+    }
+    .header{
+        width: 84vw;
+        padding: 8vw 8vw 0px 8vw;
+    }
+    .content{
+        width: 84vw;
+        padding: 6vw 8vw 0px 8vw;
+    }
+}
